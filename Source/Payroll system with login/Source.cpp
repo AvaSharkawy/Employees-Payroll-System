@@ -1090,14 +1090,14 @@ void save_logindata() {
 }
 
 void recover_logindata() {
-	ifstream UN("C:\\LoginData\\UN.txt", ios::in);
-	ifstream PW("C:\\LoginData\\PW.txt", ios::in);
-	ifstream ID("C:\\LoginData\\ID.txt", ios::in);
-	ifstream PN("C:\\LoginData\\PN.txt", ios::in);
-	ifstream A1("C:\\LoginData\\A1.txt", ios::in);
-	ifstream A2("C:\\LoginData\\A2.txt", ios::in);
-	ifstream A3("C:\\LoginData\\A3.txt", ios::in);
-	ifstream A4("C:\\LoginData\\A4.txt", ios::in);
+	ifstream UN("LoginData\\UN.txt", ios::in);
+	ifstream PW("LoginData\\PW.txt", ios::in);
+	ifstream ID("LoginData\\ID.txt", ios::in);
+	ifstream PN("LoginData\\PN.txt", ios::in);
+	ifstream A1("LoginData\\A1.txt", ios::in);
+	ifstream A2("LoginData\\A2.txt", ios::in);
+	ifstream A3("LoginData\\A3.txt", ios::in);
+	ifstream A4("LoginData\\A4.txt", ios::in);
 
 	for (int i = 0; i < total_managers; i++) {
 		getline(UN, logarr[i].username);
@@ -1112,7 +1112,7 @@ void recover_logindata() {
 }
 
 void sys_create_logindata_folder() {
-	_mkdir("C:\\LoginData");
+	_mkdir("LoginData");
 	//system("attrib +h C:\\LoginData");
 }
 
